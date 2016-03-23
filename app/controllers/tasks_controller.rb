@@ -1,8 +1,12 @@
 class TasksController < ApplicationController
+
   def index
+    @tasks = Task.all
   end
 
   def show
+    @id = params[:id]
+
   end
 
   def new
@@ -10,4 +14,15 @@ class TasksController < ApplicationController
 
   def edit
   end
+
+  def create
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+
+
 end
